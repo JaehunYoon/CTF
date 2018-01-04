@@ -1,4 +1,4 @@
-# 암호화함께사라지다
+﻿# 암호화함께사라지다
 
 ## Problem
 
@@ -64,6 +64,6 @@ print(result)
 
 공개 키는 <107, 493> 이기 때문에, d 변수에는 107을 n 변수에 493을 대입한다. value_list에 암호문 리스트를 입력해주면 암호문들이 복호화되어 Flag가 나오게 된다.
 
-![Image](Image_Link.PNG)
+![Image](https://github.com/JaehunYoon/CTF/blob/master/2017%20DSM%20CTF/Crypto/%EC%95%94%ED%98%B8%ED%99%94%ED%95%A8%EA%BB%98%EC%82%AC%EB%9D%BC%EC%A7%80%EB%8B%A4/Image/flag.PNG)
 
 Flag : **DISC{D0cum3n7ati0n_1s_hardwork!}**
