@@ -1,4 +1,4 @@
-# Gold Dog
+﻿# Gold Dog
 
 ## Problem
 
@@ -18,14 +18,14 @@ HINT : 메모장으로 열어도 나올 것 같은데..?
 
 문제의 Download 버튼을 누르면 다음과 같은 `Forensic100_Gold_Dog.png` 파일이 저장된다.
 
-![Image](Image_Link.png)
+![Image](https://github.com/JaehunYoon/CTF/blob/master/2017%20DSM%20CTF/Forensic/Gold%20Dog/Image/Forensic100_Gold_Dog.png)
 
 문제의 힌트에는 "메모장으로 열어도 나올 것 같은데..?" 라고 되어 있었기 때문에 PNG 파일을 메모장으로 열어보았다.
 
-![Image](Image_Link.png)
+![Image](https://github.com/JaehunYoon/CTF/blob/master/2017%20DSM%20CTF/Forensic/Gold%20Dog/Image/notepad.PNG)
 
-파일의 끝 부분으로 가보니 다음과 같이 유일하게 읽을만하게 생긴 문자열이 존재했다.
+파일의 끝 부분으로 가보니 다음과 같이 유일하게 읽을 만 하게 생긴 문자열이 존재했다.
 
-![Image](Image_Link.png)
+![Image](https://github.com/JaehunYoon/CTF/blob/master/2017%20DSM%20CTF/Forensic/Gold%20Dog/Image/flag.PNG)
 
 FLAG : **DISC{PNG_FI13_F0rmat!!}**
