@@ -1,4 +1,4 @@
-# MagicTime
+﻿# MagicTime
 
 ## Problem
 
@@ -13,11 +13,11 @@
 
 주어진 링크를 타고 **MagicTime** 문제의 `index.php`로 이동하면 다음과 같은 화면이 나오게 된다.
 
-![Image](Image_Link.PNG)
+![Image](https://github.com/JaehunYoon/CTF/blob/master/2017%20DSM%20CTF/Web/Magic%20Time/Image/index.PNG)
 
 **페이지 소스보기**를 해보면 소스 중간에 주석처리가 되어있는 줄이 하나 있다.
 
-![Image](Image_Link.PNG)
+![Image](https://github.com/JaehunYoon/CTF/blob/master/2017%20DSM%20CTF/Web/Magic%20Time/Image/index_viewsource.PNG)
 
 ```html
 <!-- ./index.php?view-source -->
@@ -25,7 +25,7 @@
 
 위의 경로를 URL에 추가하여 들어가면 다음과 같이 문제의 PHP 소스를 볼 수 있다.
 
-![Image](Image_Link.PNG)
+![Image](https://github.com/JaehunYoon/CTF/blob/master/2017%20DSM%20CTF/Web/Magic%20Time/Image/php_source.PNG)
 
 코드를 살펴보면 `$_GET` 방식으로 입력받는 `key2`의 값을 **md5**로 암호화했을 때 나오는 값이 `key1`의 값과 같으면 문제 풀이에 성공하게 된다.
 
@@ -35,6 +35,6 @@
 
 이는 `QNKCDZO`, `240610708` 등이 있기 때문에 이 중 하나를 `key2`에 대입하면 다음과 같이 `Flag`가 주어진다.
 
-![Image](Image_Link.PNG)
+![Image](https://github.com/JaehunYoon/CTF/blob/master/2017%20DSM%20CTF/Web/Magic%20Time/Image/flag.PNG)
 
 FLAG : **DISC{THIF_IF_NET_FLAG}**
