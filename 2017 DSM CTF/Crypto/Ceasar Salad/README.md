@@ -1,4 +1,4 @@
-# Ceasar Salad
+﻿# Ceasar Salad
 
 ## Problem
 
@@ -12,7 +12,7 @@ Ceasar 암호로 암호화된 문장을 복호화해 Flag를 찾자!
 
 문제의 Download 버튼을 누르면 다음과 같은 `encrypted.txt` 파일이 저장된다.
 
-![Image](Image_Link.PNG)
+![Image](https://github.com/JaehunYoon/CTF/blob/master/2017%20DSM%20CTF/Crypto/Ceasar%20Salad/Image/notepad.PNG)
 
 텍스트 파일을 보니 시저 암호를 이용하여 치환된 것으로 보인다.
 
@@ -52,10 +52,10 @@ print(decrypt(string, interval))
 
 `encrypted.txt` 파일에 DISC로 된 Flag가 존재할 것이라고 예상했기에 {를 검색했더니 역시나 다음과 같이 암호화된 Flag가 존재했다.
 
-![Image](Image_Link.PNG)
+![Image](https://github.com/JaehunYoon/CTF/blob/master/2017%20DSM%20CTF/Crypto/Ceasar%20Salad/Image/disc.PNG)
 
 DISC에서 QVFP로 암호화된 것을 보니 옮겨진 간격은 13 이라는 것을 알게 되었고, 위의 파이썬 코드에 다음과 같이 값을 넣어주고 결과값을 출력했다.
 
-![Image](Image_Link.PNG)
+![Image](https://github.com/JaehunYoon/CTF/blob/master/2017%20DSM%20CTF/Crypto/Ceasar%20Salad/Image/flag.PNG)
 
 Flag : **DISC{ceasar_salad_with_no_ceasar}**
