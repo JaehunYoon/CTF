@@ -1,4 +1,4 @@
-# Mixed Breed
+﻿# Mixed Breed
 
 ## Problem
 
@@ -24,12 +24,12 @@ HINT : 복호화
 
 주어진 링크를 타고 **Mixed Breed** 문제의 `index.php`로 이동하면 다음과 같은 화면이 나오게 된다.
 
-![Image](Image_Link.PNG)
+![Image](https://github.com/JaehunYoon/CTF/blob/master/2017%20DSM%20CTF/Web/Mixed%20Breed/Image/index%20page.PNG)
 
 
 `Password`와 `Passcode`를 입력받는 폼이 존재하고 **페이지 소스 보기**를 해보면 다음과 같이 눈에 띄는 주석이 있다.
 
-![Image](Image_Link.PNG)
+![Image](https://github.com/JaehunYoon/CTF/blob/master/2017%20DSM%20CTF/Web/Mixed%20Breed/Image/index%20page%20view-source.PNG)
 
 ```html
 <!-- VEdrNWNHSnRVbXhsUXpWM1lVaEJMMk15T1RGamJVNXNXVEk1YTFwUlBUMD0= -- >
@@ -38,7 +38,7 @@ HINT : 복호화
 
 이를 3번 정도 디코딩시키면 `./index.php?sourcecode` 가 나오게 되며 `index.php`의 URL에 위와 같이 `?sourcecode`를 대입하면 다음과 같은 PHP 소스코드를 볼 수 있게 된다.
 
-![Image](Image_Link.PNG)
+![Image](https://github.com/JaehunYoon/CTF/blob/master/2017%20DSM%20CTF/Web/Mixed%20Breed/Image/index%20php%20viewsource.PNG)
 
 
 ```php
@@ -52,14 +52,14 @@ $input_password=str_replace("best","",$_GET["password"]);
 
 조건을 충족하는 Password와 Passcode를 입력해주면 출력되는 `hint`는 다음과 같다.
 
-![Image](Image_Link.PNG)
+![Image](https://github.com/JaehunYoon/CTF/blob/master/2017%20DSM%20CTF/Web/Mixed%20Breed/Image/hint.PNG)
 
 `7e432d6f6cc2100e03523d8985c914f3ca3f522af7799564d48c37af231c9d5b9acbc45201e139cdab4a01c7aadb4f8e4f9a2990eb3ef699f6495055cedea0d4` 를 문제에서 Hint로 제공해주었던 복호화 사이트에서 복호화시키면 다음과 같은 `hint`가 나오게 된다.
 
-![Image](Image_Link.PNG)
+![Image](https://github.com/JaehunYoon/CTF/blob/master/2017%20DSM%20CTF/Web/Mixed%20Breed/Image/decrypt.PNG)
 
 `hint`에서 주어진 경로를 URL로 진입하면 다음과 같이 `Flag`가 주어진 페이지를 볼 수 있다.
 
-![Image](Image_Link.PNG)
+![Image](https://github.com/JaehunYoon/CTF/blob/master/2017%20DSM%20CTF/Web/Mixed%20Breed/Image/solve.PNG)
 
 FLAG : **DISC{WH2_5O_S2RIOU5}**
